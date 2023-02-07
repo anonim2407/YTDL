@@ -1,0 +1,38 @@
+.grid {
+  display: grid;
+  gap: 3rem;
+  justify-items: center;
+  align-content: center;
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.grid a:hover {
+  cursor: pointer;
+}
+
+.contenido img {
+  border-radius: 2rem;
+}
+
+.contenido iframe{
+  width: 100%;
+  height: 40rem;
+}
+
+.descripcion,
+.cancion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.descripcion h3 {
+  font-size: 2rem;
+}
+.descripcion p {
+  color: #9b9b9b;
+  margin: 0;
+}
